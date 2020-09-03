@@ -1,0 +1,154 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+.top-header{
+	background:#14BDEE;
+}
+.rog{
+	height:100%;
+	background:#F3F3F3;
+	padding:0 10px;
+	float:right;
+}
+.brand_color{
+	color:#14BDEE;
+}
+#brand_logo{
+	width: 160px;
+    padding-top:8px;
+}
+.navbar-nav{
+	margin-left:-16px;
+}
+.nav a{
+	height: 60px;
+	line-height: 40px;
+	width:160px;
+	padding-top:8px; 
+	font-family:tahoma;
+	border-right:1px solid #ffffff;
+	text-align: center;
+}
+#mynav a{
+	height: 60px;
+	line-height: 57px;
+	padding:0 20px;
+	width:auto;
+	color:black;
+	font-size:16px;
+	text-align: center;
+}
+#mynav a:hover{
+	color:#14BDEE;
+	border-bottom:2px solid #14BDEE;
+}
+
+.item_dropdown a{
+	text-decoration:none;
+	display:block;
+}
+
+.carousel-caption{
+	top:25%;
+}
+.carousel-caption h2{
+	margin:15px;
+}
+.carousel-caption h4{
+	margin:15px;
+	color:#76777A;
+}
+.form-control{
+	border-radius:none;
+}
+
+.graduate i{
+	font-size:40px;
+	text-align:center;
+}
+.first_card{
+	padding:10px;
+	transition:.5s;
+}
+.first_card:hover{
+	box-shadow:0 0 10px 10px rgba(0,0,0,.1);
+}
+
+.notices{
+  background-color: #43455A;
+  opacity: .9;
+  padding-left: 40px;
+  filter: alpha(opacity=60);
+}
+.notices span {
+  margin: 5%;
+  color: #fff;
+}
+
+
+
+.containe {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middl {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.containe:hover .image {
+  opacity: 0.3;
+}
+
+.containe:hover .middl {
+  opacity: 1;
+}
+
+.text_john {
+  background:rgba(150,100,150,.5); 
+  color: white;
+  padding: 16px 32px;
+}
+.text_john span{
+	font-size:26px;
+}
+
+.text_jr {
+  background:white; 
+  color: white;
+  padding:8px 16px;
+}
+.text_jr span{
+	font-size:16px;
+}
+
+.panel-title a{
+	text-decoration: none;
+}
+/*---footer---*/
+  #footer li{
+  	padding-left:30px;
+  	list-style:none;
+  }
+  #footer li a{
+  	color:mistyrose;
+  }
+   #footer a:hover{
+  	
+  }

@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Landing Page</title>
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+	<div class="container">
+		<div class="row bg-light">
+			<div class="col-md">
+				<h3>
+					<marquee>
+						Admission Form Must Fill-up Name, F'Name, M'Name, F'Occupation, F'Income, Date of Birth, Gender, Agriment. (Student Photo Upload must 300*300 pixel and <= 100 kb)
+					</marquee>
+				</h3>
+			</div>
+		</div>
+		<div class="row bg-success">
+			<div class="col-md">
+				<h3 class="text-light text-center">Online Admission Form</h3>
+				<p class="text-center text-light"><i>Fill Up The Form Carefully</i></p>
+			</div>
+		</div>
+		<div class="container-fluid">
+		<form action=""></form>
+			<div class="row bg-light shadow p-2">
+			<div class="col-md-9">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="form-group">
+							<input type="text" placeholder="Name" name="student_name" class="form-control" />
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<input type="text" placeholder="Father's Name" name="father_name" class="form-control" />
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="form-group">
+							<input type="text" placeholder="Mother's Name" name="mother_name" class="form-control" />
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<input type="text" placeholder="E-mail (If any)" name="student_email" class="form-control" />
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="form-group">
+							<input type="text" placeholder="Phone Number" name="phone" class="form-control" />
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<input type="text" placeholder="Father's Occupation" name="father_occ" class="form-control" />
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="form-group">
+							<input type="text" placeholder="Annual Income" name="annual_income" class="form-control" />
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<input type="text" placeholder="Birth Certificate/NID No" name="nid_bcc" class="form-control" />
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<span class="badge badge-secondary">Date Of Birth</span>
+						<div class="form-group">
+							<input type="date" placeholder="" name="birth_date" class="form-control" />
+						</div>
+					</div>
+					<div class="col-md-6">
+						<span class="badge badge-secondary">Admission Date</span>
+						<div class="form-group">
+							<input type="date" placeholder="" name="birth_date" class="form-control" />
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-3">
+						<div class="form-group">
+							<select name="gender" class="form-control">
+								<option selected>Gender</option>
+								<option value="Male">Male</option>
+								<option value="Female">Female</option>
+								<option value="Other">Other</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="form-group">
+							<select name="nationality" class="form-control">
+								<option selected>Nationality</option>
+								<option value="Bangladeshi">Bangladeshi</option>
+								<option value="Indian">Indian</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="form-group">
+							<select name="nationality" class="form-control">
+								<option selected>Religion</option>
+								<option value="Islam">Islam</option>
+								<option value="Hindu">Hindu</option>
+								<option value="Buddo">Buddo</option>
+								<option value="Other">Other</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="form-group">
+							<select name="nationality" class="form-control">
+								<option selected>Quota</option>
+								<option value="None">None</option>
+								<option value="Freedom">Freedom Figher</option>
+								<option value="Answar">Answar B.D.P</option>
+								<option value="Other">Other</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="border border-primary h-100 p-2">
+					<img id="studentPhoto">
+					<div class="form-group">
+						<input type="file" class="form-control-file" onchange="studentphoto(this);" id="photo" accept="image/*" />
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+		<div class="row bg-dark">
+			<div class="col-md">
+				<h4 class="text-light text-center">Present Address</h4>
+			</div>
+		</div>
+		<div class="container-fluid">
+			<div class="row shadow bg-light p-2">
+				<div class="col-md-3">
+					<select name="" class="form-control">
+						<option selected disabled>Country</option>
+						<option value="Bangladesh">Bangladesh</option>
+						<option value="India">India</option>
+					</select>
+				</div>
+				<div class="col-md-3">
+					<select name="" class="form-control">
+						<option selected disabled>Division</option>
+						<option value="Dhaka">Dhaka</option>
+						<option value="Sylhet">Sylhet</option>
+					</select>
+				</div>
+				<div class="col-md-3">
+					<select name="" class="form-control">
+						<option selected disabled>District</option>
+						<option value="Dhaka">Dhaka</option>
+						<option value="Sylhet">Sylhet</option>
+					</select>
+				</div>
+				<div class="col-md-3">
+					<select name="" class="form-control">
+						<option selected disabled>Upzilah</option>
+						<option value="Sylhet Shadar">Sylhet Shadar</option>
+						<option value="Demra">Demra</option>
+					</select>
+				</div>
+				<div class="col-md-3 mt-1">
+					<input type="text" placeholder="Present Thana" class="form-control" />
+				</div>
+				<div class="col-md-3 mt-1">
+					<input type="text" class="form-control" placeholder="Present Post Office" />
+				</div>
+				<div class="col-md-3 mt-1">
+					<input type="text" placeholder="Village Name" class="form-control" />
+				</div>
+				<div class="col-md-3 mt-1">
+					<input type="text" placeholder="Present Contact" class="form-control" />
+				</div>
+			</div>
+		</div>
+		<div class="row bg-secondary" id="sameaddress">
+			<div class="col-md">
+				<h4 class="text-center text-light">
+					Permanent Address 
+				</h4>
+				<div id="same" class="text-center">
+					<input type="checkbox" id="sameclick" value="on"/> <strong class="text-dark">Same As Present</strong>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid" id="permaddress">
+			<div class="row shadow bg-light p-2">
+				<div class="col-md-3">
+					<select name="" class="form-control">
+						<option selected disabled>Country</option>
+						<option value="Bangladesh">Bangladesh</option>
+						<option value="India">India</option>
+					</select>
+				</div>
+				<div class="col-md-3">
+					<select name="" class="form-control">
+						<option selected disabled>Division</option>
+						<option value="Dhaka">Dhaka</option>
+						<option value="Sylhet">Sylhet</option>
+					</select>
+				</div>
+				<div class="col-md-3">
+					<select name="" class="form-control">
+						<option selected disabled>District</option>
+						<option value="Dhaka">Dhaka</option>
+						<option value="Sylhet">Sylhet</option>
+					</select>
+				</div>
+				<div class="col-md-3">
+					<select name="" class="form-control">
+						<option selected disabled>Upzilah</option>
+						<option value="Sylhet Shadar">Sylhet Shadar</option>
+						<option value="Demra">Demra</option>
+					</select>
+				</div>
+				<div class="col-md-3 mt-1">
+					<input type="text" placeholder="Permanent Thana" class="form-control" />
+				</div>
+				<div class="col-md-3 mt-1">
+					<input type="text" class="form-control" placeholder="Permanent Post Office" />
+				</div>
+				<div class="col-md-3 mt-1">
+					<input type="text" placeholder="Permanent Village Name" class="form-control" />
+				</div>
+				<div class="col-md-3 mt-1">
+					<input type="text" placeholder="Permanent Contact" class="form-control" />
+				</div>
+			</div>
+		</div>
+		<div class="row bg-warning">
+			<div class="col-md">
+				<h4 class="text-center">Last Institute</h4>
+			</div>
+		</div>
+		<div class="container-fluid">
+			<div class="row shadow bg-light p-2">
+				<div class="col-md-3">
+					<input type="text" class="form-control" placeholder="Last Institute" />
+				</div>
+				<div class="col-md-3">
+					<input type="text" class="form-control" placeholder="Last Class" />
+				</div>
+				<div class="col-md-3">
+					<input type="text" class="form-control" placeholder="Session/Year" />
+				</div>
+				<div class="col-md-3">
+					<input type="text" class="form-control" placeholder="Passing Year" />
+				</div>
+				<div class="col-md-3 mt-1">
+					<input type="text" class="form-control" placeholder="Past Roll" />
+				</div>
+				<div class="col-md-3 mt-1">
+					<input type="text" class="form-control" placeholder="Past Reg" />
+				</div>
+				<div class="col-md-3 mt-1">
+					<input type="text" class="form-control" placeholder="Past ID" />
+				</div>
+				<div class="col-md-3 mt-1">
+					<input type="text" class="form-control" placeholder="Past GPA" />
+				</div>
+				<div class="col-md-12 mt-1">
+					<input type="text" class="form-control" placeholder="Reason For Leaving" />
+				</div>
+			</div>
+		</div>
+		<div class="row bg-danger">
+			<div class="col-md">
+				<h4 class="text-center text-light">Admission Details</h4>
+			</div>
+		</div>
+		<div class="container-fluid">
+			<div class="row shadow bg-light p-2">
+				<div class="col-md-3">
+					<div class="form-control">
+						<input type="checkbox" /> <strong>I Agree To Admit</strong>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<select name="" class="form-control">
+						<option selected disabled>Select Class</option>
+						<option value="Play">Play</option>
+						<option value="Play">Play</option>
+						<option value="Play">Play</option>
+					</select>
+				</div>
+				<div class="col-md-3">
+					<select name="" class="form-control">
+						<option selected disabled>Department/Group</option>
+						<option value="Sceience">Sceience</option>
+						<option value="Art's">Art's</option>
+						<option value="Commerce">Commerce</option>
+					</select>
+				</div>
+				<div class="col-md-3">
+					<input type="text" class="form-control" placeholder="Admission Institute" />
+				</div>
+			</div>
+		</div>
+		
+		<div class="row mt-3">
+			<div class="col-md-6">
+				<input type="submit" class="btn btn-primary btn-block" value="Admit" />
+			</div>
+			<div class="col-md-6">
+				<input type="reset" class="btn btn-danger btn-block" value="Clear All" />
+			</div>
+		</div>
+		
+	
+	
+	
+	</div>
+	
+	
+	
+	
+	
+  <script src="js/jquery.3.2.1.min.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		$(document).on("click","#sameclick",function(){
+			$("#permaddress").hide();
+		})
+		function studentphoto(input) {
+          if (input.files && input.files[0]) {
+              var reader = new FileReader();
+              reader.onload = function (e) {
+                  $('#studentPhoto')
+                  .attr('src', e.target.result)
+				  .attr("class","img-thumbnail mb-2")
+              };
+              reader.readAsDataURL(input.files[0]);
+          }
+        }
+	</script>
+	
+	
+	
+	
+</body>
+</html>
